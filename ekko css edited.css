@@ -1,0 +1,1774 @@
+/* css by tawnyCollar#251887 */
+/* do not use this code as a template, copy any part of this css for your own use, remove any credit, or claim any of this code as your own work */
+/* for rules on use of my commissioned css, see here: https://www.lioden.com/topic.php?id=304429515840 */
+/* for rules on use of my free css, see here: https://www.lioden.com/topic.php?id=304429527797 */
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+:root {
+--font1: "Knewave", system-ui;
+--light1: #d88a54;
+--light170: #d88a54ab;
+--dark1: #8a4a1d;
+--dark170: #8a4a1da3;
+--light2: #d2a83e;
+--light270: #d2a83ebd;
+--dark2: #8d6b13;
+--dark270: #8d6b13a8;
+--light3: #39d5db;
+--light370: #39d5dbad;
+--dark3: #07666a;
+--dark370: #07666ab0;
+--light4: #33ab7f;
+--light470: #33ab7fad;
+--dark4: #0a6d49;
+--dark470: #0a6d49a6;
+--highlight: #fff;
+--highlight4: #3bb5e6;
+--shadow: #000;
+--gradient1: linear-gradient(180deg,var(--light1) 0%, var(--dark1) 100%);
+--gradient2: linear-gradient(180deg,var(--light2) 0%, var(--dark2) 100%);
+--gradient3: linear-gradient(180deg,var(--light3) 0%, var(--dark3) 100%);
+--gradient4: linear-gradient(180deg,var(--light4) 0%, var(--dark4) 100%);
+--gradient170: linear-gradient(180deg,var(--light170) 0%, var(--dark170) 100%);
+--gradient270: linear-gradient(180deg,var(--light270) 0%, var(--dark270) 100%);
+--gradient370: linear-gradient(180deg,var(--light370) 0%, var(--dark370) 100%);
+--gradient470: linear-gradient(180deg,var(--light470) 0%, var(--dark470) 100%);
+--desktopbackground: url("https://github.com/ghostsofsteel/ekko/blob/main/background.jpg?raw=true") center fixed;
+--mobilebackground: url("https://github.com/ghostsofsteel/ekko/blob/main/background.jpg?raw=true");
+--cursor: url("https://ani.cursors-4u.net/cursors/cur-13/cur1161.png"), auto !important;
+--cursorHover: url("https://ani.cursors-4u.net/cursors/cur-13/cur1161.png"), pointer;
+--logo: url("https://github.com/ghostsofsteel/ekko/blob/main/logo%20replacement.png?raw=true");
+--logo2: url("");
+--unsorted: url("https://github.com/ghostsofsteel/ekko/blob/main/unsorted%20replacement.gif?raw=true");
+--nesting: url("https://github.com/ghostsofsteel/ekko/blob/main/pregnant%20lionesses%20replacement.gif?raw=true");
+--poverview: url("https://github.com/ghostsofsteel/ekko/blob/main/pride%20overview%20replacement.gif?raw=true");
+--ncave: url("https://github.com/ghostsofsteel/ekko/blob/main/caveimg3.png?raw=true");
+--cave1: url("https://github.com/ghostsofsteel/ekko/blob/main/caveimg1.jpg?raw=true");
+--cave2: url("https://github.com/ghostsofsteel/ekko/blob/main/caveimg3.png?raw=true");
+--cave3: url("https://github.com/ghostsofsteel/ekko/blob/main/caveimg2.jpg?raw=true");
+--cave4: url("https://github.com/ghostsofsteel/khry/blob/main/cave4.gif?raw=true");
+--cave5: url("https://github.com/ghostsofsteel/khry/blob/main/cave5.png?raw=true");
+--cave6: url("https://github.com/ghostsofsteel/khry/blob/main/cave6.gif?raw=true");
+--feetLion: url("https://static.lioden.com/images/dynamic/backgrounds/australiaBM.png");
+--moundunsort: url("https://github.com/ghostsofsteel/ekko/blob/main/image-ezgif.com-crop%20-%202025-09-15T174054.863.png?raw=true");
+--mound1: url("");
+--mound2: url("");
+--nmound: url("https://github.com/ghostsofsteel/ekko/blob/main/image-ezgif.com-resize%20-%202025-09-15T173953.611.png?raw=true");
+--backscroll: url("");
+--navbarIMG: url("");
+--panelIMG: url("");
+--GB: url("https://github.com/ghostsofsteel/ekko/blob/main/gb%20replacement.png?raw=true");
+--SB: url("https://github.com/ghostsofsteel/ekko/blob/main/sb%20replacement.png?raw=true");
+--event1: url("https://github.com/ghostsofsteel/ekko/blob/main/image%20-%202025-09-15T165441.512.png?raw=true");
+--event2: url("https://github.com/ghostsofsteel/ekko/blob/main/image%20-%202025-09-15T165544.519.png?raw=true");
+--day: url("https://www.lioden.com/images/items/Other/gemnuumite.png");
+--night: url("https://www.lioden.com/images/items/Other/gemmoonstone.png");
+--dry: url("https://www.lioden.com/images/items/Other/gemmeteorite.png");
+--wet: url("https://www.lioden.com/images/items/Other/gem_tanzanite.png");
+--online: url("https://github.com/ghostsofsteel/ekko/blob/main/nevermind%20THIS%20is%20the%20last%20one.gif?raw=true");
+--arrow1: url("https://github.com/ghostsofsteel/ekko/blob/main/pagedoll2.png?raw=true");
+--arrow2: url("https://github.com/ghostsofsteel/ekko/blob/main/yet%20another%20pagedoll.gif?raw=true");
+--arrow3: url("https://github.com/ghostsofsteel/ekko/blob/main/New%20Project%20-%202025-09-15T172109.153.png?raw=true");
+--kdynasty: url("https://www.lioden.com/images/items/Other/shamanstew.png");
+--pdynasty: url("https://www.lioden.com/images/items/Other/roastedlamb.png");
+--achievements: url("https://www.lioden.com/images/items/Other/agingstone.png");
+--showcase: url("https://www.lioden.com/images/items/Other/safou.png");
+--bbook: url("https://www.lioden.com/images/items/Other/mushroombrew.png");
+--frameIMG: url("https://github.com/ghostsofsteel/ekko/blob/main/2aef650e89de9b1b577dbb7b77875c3b99583c95%20(1).png?raw=true");
+--tawnyboxIMG: url("https://github.com/ghostsofsteel/ekko/blob/main/image-ezgif.com-resize%20-%202025-09-15T172556.055.png?raw=true");
+--commentFriend: url("https://github.com/ghostsofsteel/ekko/blob/main/tumblr_22b2edf0c6bb485b832326a150998426_8d8e8ced_540.gif?raw=true");
+--pagedoll: url("https://github.com/ghostsofsteel/ekko/blob/main/pagedolls%203%20keep%20them%20together.png?raw=true");
+--pagedtawn: url("");
+--pagedoll2: url("https://github.com/ghostsofsteel/ekko/blob/main/pagedoll%201%20also%20you%20dont%20have%20to%20use%20all%20of%20these.png?raw=true");
+--facebook: url("https://www.lioden.com/images/items/Other/app_doubloonmarks.png");
+--twitter: url("https://www.lioden.com/images/items/Other/apparcticmarkings.png");
+--twitch: url("https://www.lioden.com/images/items/Other/app_gregariousform.png");
+--youtube: url("https://www.lioden.com/images/items/Other/app_rimemarks.png");
+--xnest: url("https://www.lioden.com/images/items/Other/GrainOfParadise.png");
+--xhungry: url("https://www.lioden.com/images/items/Other/Honeycomb.png");
+--friend: url("https://static.lioden.com/images/items/Other/bottle.png");
+--wish: url("https://static.lioden.com/images/items/Other/gem_kunzite.png");
+--viewtrade: url("https://static.lioden.com/images/items/Other/gemjasper.png");
+--trade: url("https://www.lioden.com/images/items/Other/gem_alexandrite.png");
+--gift: url("https://static.lioden.com/images/items/Other/gemmossagate.png");
+--message: url("https://static.lioden.com/images/items/Other/gemopalrough.png");
+--block: url("https://www.lioden.com/images/items/Food/eggyolk.png");
+--toggleON: url("https://github.com/ghostsofsteel/ekko/blob/main/175622989486800.png?raw=true");
+--toggleOFF: url("https://github.com/ghostsofsteel/ekko/blob/main/175622989486800.png?raw=true");
+--emote: url("https://www.lioden.com/images/items/Other/opalsaltlick.png");
+--ellipses: url("https://www.lioden.com/images/items/Other/rocksalt.png");
+--sticky: url("");
+--reLOAD: url("");
+--settings: url("");
+--kingportraitMobile: url("");
+--kingportraitDesktop: url("https://file.garden/ZT05KmKGxCOelkjx/Screenshot%202026-03-23%20173357.png");
+--outline: 7px outset var(--light2);
+--border: 3px solid var(--light2);
+--borderrad1: 5px;
+--borderrad2: 10px;
+--boxoutshadow: 1px 1px 5px var(--shadow);
+--textshadow: 1px 1px 1.5px var(--shadow);
+--dropshadow: drop-shadow(0px 0px 1mm #000000);
+--dropwhite: drop-shadow(0px 0px 4px #ffffff);
+--textoutline: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+--textoutlineW: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+--transition1: 0.7s ease;
+--transition2: 0.4s ease;
+--opacity1: 0.85!important;
+--opacity2: 1!important;
+}
+/*mobile background*/
+@media screen and (max-width: 768px){
+body {
+background: var(--mobilebackground) no-repeat center center fixed;
+color: var(--light1);
+font-family: var(--font1);
+text-shadow: var(--textshadow);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+html:not(.nolayout) body:after {
+content: "";
+position: fixed;
+top: 0;
+height: 160vh;
+left: 0;
+right: 0;
+z-index: -1;
+background: var(--mobilebackground) center center;
+color: var(--light1)!important;
+font-family: var(--font1);
+text-shadow: var(--textshadow);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+}
+@media only screen
+and (min-width: 1024px)
+and (max-height: 1366px)
+and (-webkit-min-device-pixel-ratio: 1.5) {
+body {
+background: var(--desktopbackground) no-repeat center center fixed;
+color: var(--light1);
+font-family: var(--font1);
+text-shadow: var(--textshadow);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+html:not(.nolayout) body:after {
+background: var(--desktopbackground) center center;
+color: var(--light1)!important;
+font-family: var(--font1);
+content: "";
+position: fixed;
+top: 0;
+width: 100%;
+height: 100%;
+left: 0;
+right: 0;
+z-index: -1;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+body::after { /* t */
+background-image: var(--pagedoll2);
+background-size: cover;
+content: "";
+height: 300px;
+width: 215px;
+position: fixed;
+left: 0px;
+top: 0rem;
+z-index: 99;
+pointer-events:none;
+}
+}
+/* desktop background */
+@media screen and (min-width: 768px){
+body {
+background: var(--desktopbackground);
+color: var(--light1);
+font-family: var(--font1);
+text-shadow: var(--textshadow);
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-background-size: cover;
+font-size: 18px;
+}
+*{cursor: var(--cursor);} 
+body::after {
+background-image: var(--pagedoll2);
+content: "";
+background-size: cover;
+position: fixed;
+height: 300px;
+width: 215px;
+left: 0px;
+top: 0rem;
+z-index: 99;
+pointer-events:none;
+filter: var(--dropshadow);
+}
+}
+/* center of the den */
+.col-md-9 {
+color: var(--light3);
+background: none; /* remove to use background of right side */
+border-right: none;
+z-index: 1;
+}
+/* right hand collumn/main background color if i so choose */
+.container.main {
+background: var(--gradient270); /* you dont want to remove this */
+border-radius: var(--borderrad2);
+box-shadow:  var(--dark2) 0px 0px 150px 0px inset, var(--boxoutshadow);
+border:/* a */ 0;
+}
+/* pagedoll */
+.container.main::after {
+background-image: var(--pagedoll);
+filter: var(--dropshadow);
+content: "";
+background-size: cover;
+position: fixed;
+display: block;
+height:280px;
+width:450px;
+right: 0px;
+bottom: 0rem;
+z-index: 100;
+pointer-events:none;
+}
+/* links and hover colors */
+a {
+color: var(--light4)!important;
+cursor: var(--cursorHover)!important;
+transition: var(--transition1);
+}
+a:hover {
+color: var(--dark4)!important;
+cursor: var(--cursorHover)!important;
+transition: var(--transition2);
+}
+/* toppybar */
+.topbar {
+background: var(--gradient4);
+color: var(--light2);
+filter: var(--dropshadow);
+border-radius: 0 0 10px 10px;
+font-size: 16px;
+top: 0;
+}
+.topbar a {
+color: var(--light1)!important;
+}
+.topbar a:hover {
+color: var(--dark1)!important;
+}
+/* mister navbar */
+.navbar {
+background: var(--gradient1);
+border-radius: var(--borderrad2);
+filter: var(--dropshadow);
+}
+.navbar-default .navbar-nav > li > a {
+color: var(--light3)!important;
+transition: var(--transition1);
+background: none;
+padding-top: 15px;
+padding-bottom: 15px;
+font-size: 20px!important;
+}
+.navbar-default .navbar-nav > li > a:hover {
+background: var(--light3);
+box-shadow: var(--dark3) 0px -35px 36px -28px inset;
+color: var(--light2)!important;
+border-radius: var(--borderrad2);
+transition: var(--transition2);
+}
+@media screen and (max-width: 767px){
+.navbar-default .navbar-nav > li > a { /*remove this for normal mobile navbar*/
+color: var(--light3)!important;
+font-size: 1.4vh!important;
+float: left;
+}
+}
+.navbar-toggle .icon-bar {
+display: none; /* code initially made by Florcita #378453. heavily edited + added onto by ME. edited version is NOT f2u */
+}
+.navbar-toggle {
+background:var(--toggleON) no-repeat center center;
+filter: var(--dropshadow);
+background-size: cover!important;
+border-radius: 100px!important;
+transform: scaleX(1);
+border: none!important;
+width: 30px;
+height: 30px;
+}
+button.navbar-toggle.collapsed {
+background: var(--toggleOFF);
+transition: var(--transition1);
+filter: var(--dropshadow);
+transform: scaleX(-1);
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: transparent;
+transition: var(--transition1);
+}
+/* home and den breadcrumb */
+.breadcrumb {
+background: var(--gradient3);
+filter: var(--dropshadow);
+border-radius: var(--borderrad1);
+}
+.breadcrumb .active {
+color: var(--light2);
+}
+.breadcrumb a {
+color: var(--light1)!important;
+}
+.breadcrumb a:hover {
+color: var(--dark1)!important;
+}
+/* alerts */
+.alert {
+background: var(--gradient3);
+color: var(--light2);
+filter: var(--dropshadow);
+border-radius: var(--borderrad2);
+text-align: center;
+border: 0px;/* w */
+}
+.alert-danger {
+background: var(--gradient3);
+color: var(--light2);
+}
+.alert-warning {
+background: var(--gradient4);
+color: var(--light1);
+}
+.alert-warning b {
+  color: var(--light2);
+}
+.alert-warning a {
+color: var(--light2)!important;
+}
+.alert-warning a:hover {
+color: var(--dark2)!important;  
+}
+.alert-success {
+background: var(--gradient1);
+color: var(--light3)!important;
+filter: var(--dropshadow);
+}
+.alert-success a {
+color: var(--light4)!important;
+}
+.alert-success a:hover{
+color: var(--dark4)!important;  
+}
+/*code by hok-z #170947 heavily edited by MOI */
+/* #commentBox::before { */
+/* content: "Khrysis smells like farts"; */
+/* background: var(--gradient3); */
+/* filter: var(--dropshadow); */
+/* color: var(--light1); */
+/* font-weight: 700; */
+/* width: 100%; */
+/* height: 40px; */
+/* display: block; */
+/* padding-top: 10px !important; */
+/* position: sticky!important; */
+/* top:0; */
+/* z-index:10; */
+/* } */
+#makeComment::after {
+content: "";
+background-image: var(--commentFriend);
+filter: var(--dropshadow);
+background-size: cover;
+display: block; 
+position: absolute;
+height: 300px;
+width: 350px;
+margin-right: 600px;
+margin-left: -90px;
+transform:scaleX(-1);
+margin-top: -350px;
+margin-bottom: 100px;
+z-index: -1;
+} 
+#commentBox {
+background: var(--gradient470);
+box-shadow: var(--boxoutshadow);
+border: none!important;
+float: right;
+margin-top: 30px;
+width: 80%;
+z-index: 2;
+}
+::placeholder {
+color: var(--light1);
+/* n */}
+div.comment:nth-child(odd) {
+background: var(--gradient170)!important;
+color: var(--light3);
+box-shadow: var(--boxoutshadow)!important;
+}
+.comment:nth-child(even) {
+background: var(--gradient370)!important;
+color: var(--light1);
+box-shadow: var(--boxoutshadow)!important;
+}
+input#comment {
+margin-top: 10px;
+}
+div.comment:nth-child(odd) small.text-muted {
+color: var(--light4);
+}
+div.comment:nth-child(even) small.text-muted {
+color: var(--light2);
+}
+div.comment:nth-child(odd) small.text-muted a {
+color: var(--light1)!important;
+}
+div.comment:nth-child(odd) small.text-muted a:hover {
+color: var(--dark1)!important;
+}
+div.comment:nth-child(even) small.text-muted a {
+color: var(--light4)!important;
+}
+div.comment:nth-child(even) small.text-muted a:hover {
+color: var(--dark4)!important;
+}
+input[type="button"].bad {
+background: var(--light4) !important;
+box-shadow: var(--dark4) 0px -40px 20px -28px inset, var(--boxoutshadow)!important;
+color: var(--light2) !important;
+border-radius: var(--borderrad2) !important;
+text-shadow: var(--textshadow) !important;
+transition: var(--transition1);
+border: none!important;
+}
+input[type="button"].bad:hover {
+background: var(--light3)!important;
+box-shadow: var(--dark3) 0px -40px 20px -28px inset, var(--boxoutshadow)!important; 
+color: var(--light1)!important;
+transition: var(--transition2);  
+}
+.commentTag {
+filter:var(--dropshadow);
+width: 50px!important;
+height: 50px!important;
+border-radius: 25px!important;
+/*filter: sepia(100%) hue-rotate(110deg) saturate(140%) drop-shadow(0px 0px 4px #000000);*/
+}
+/* chat details */
+div#chatMessageContainer {
+background: var(--light4)!important;
+border-radius: var(--borderrad2) !important;
+filter: var(--dropshadow);
+border: none;
+}
+.s-chat-message {
+border: none;
+}
+.s-chat-message:nth-child(odd) {
+background: var(--gradient3) !important;
+color: var(--light1);
+}
+.s-chat-message:nth-child(even) {
+background: var(--gradient1);
+color: var(--light4);
+}
+#chatMessageList > div.s-chat-message.s-chat-message__mod {
+background: var(--gradient4)!important;
+color: var(--light2)!important;
+}
+.s-chat-message a {
+cursor: var(--cursorHover)!important; 
+}
+.s-chat-message:nth-child(odd) a {
+color: var(--light2)!important;  
+}
+.s-chat-message:nth-child(odd) a:hover {
+color: var(--dark2)!important;  
+}
+.s-chat-message:nth-child(even) a {
+color: var(--light3)!important;  
+}
+.s-chat-message:nth-child(even) a:hover {
+color: var(--dark3)!important;  
+}
+.s-chat-message_timestamp {
+color: var(--light4);
+font-size: 12px;
+}
+/* channel tabs */
+button#label_currentChannel {	
+background: var(--gradient1)!important;
+color: var(--light3);
+text-shadow: var(--textshadow);
+box-shadow: var(--boxoutshadow);
+border-radius: var(--borderrad1);
+border: 0!important;
+}
+#lblCharacterCounter {
+color: var(--light3)!important;
+}
+#chatMessagePinned {
+background: var(--gradient4);
+color: var(--light2);
+}
+#chatMessagePinned.s-chat-message__pinned {
+background: var(--sticky) no-repeat 10px 6px;
+color: var(--light1)!important;
+border-bottom: none!important;
+}
+#chatMessagePinned.s-chat-message__pinned a {
+color: var(--light2)!important;
+}
+body > div.container.main > div:nth-child(2) > div.sidebar.col-md-3.visible-xs.visible-sm.col-xs-12.visible-md.visible-lg > div.col-md-12.col-xs-12 > h3 > div:nth-child(2) {
+margin-top: 30px;
+left: 160px;
+}
+.s-chat-message_menu {
+background: var(--ellipses) no-repeat;
+cursor: var(--cursorHover)!important;
+filter: var(--dropshadow);
+background-size: 100% 100%;
+}
+/* energy bar, bookmarks and achievemnts */
+.panel {
+background: var(--gradient3)!important;
+color: var(--light2)!important;
+filter: var(--dropshadow);
+border-radius: var(--borderrad2);
+/*background-image: var(--panelIMG)!important;
+background-size:cover!important;
+background-blend-mode: luminosity !important;*/
+box-shadow: none!important; /*if you remove this tawny, you're a MORON*/
+border: 0px!important; /*same with this one, dont ever remove this*/
+}
+div.col-md-12.col-xs-6 a, div.col-md-12.col-xs-5 > div:nth-child(4) > div > a {
+color: var(--light1)!important;
+}
+div.col-md-12.col-xs-6 a:hover, div.col-md-12.col-xs-5 > div:nth-child(4) > div > a:hover {
+color: var(--dark1)!important;
+}
+.panel-body.small {
+font-size: 16px;/*hey if you want to change the font size of the panel LOOK HERE*/
+}
+div.col-md-12.col-xs-12 > div:nth-child(3) > div > div > b {
+color: var(--light1)!important; /*# of players*/
+}
+div.col-md-12.col-xs-12 > div:nth-child(3) > div > div > b:nth-child(10) > a {
+color: var(--light1)!important; /*# of mutated lions*/
+}
+/* the back of the energy bar */
+.progress {
+background: linear-gradient(var(--dark3), var(--shadow));
+box-shadow: var(--boxoutshadow);
+border-radius: var(--borderrad2);
+}
+/* text of the energy bar */
+.progress div {
+font-size: 13px!important;
+}
+.progress:nth-child(odd) div {
+ color: var(--light4)!important;
+}
+.progress:nth-child(even) div {
+ color: var(--light3)!important;
+}
+/* energy XP progress and account standing bar */
+.progress-bar-warning, .progress-bar-success, div:nth-child(2)>div>div>div.progress-bar.progress-bar-success, th > div > div.progress-bar.progress-bar-success {
+background: var(--gradient1)!important;
+}
+/* hunger and IMP bar */
+.progress-bar-danger, .progress-bar {
+background: var(--gradient2);
+border-radius: var(--borderrad2);
+filter: var(--dropshadow);
+}
+/* main lion info table */
+/* background color */
+.table {
+background: var(--gradient470);
+color: var(--light2);
+box-shadow: var(--dark470) 0px -80px 120px -28px inset, var(--boxoutshadow);
+/*background-image: var(--backscroll);
+background-attachment: fixed;
+background-blend-mode: luminosity;*/
+border-radius: var(--borderrad2);
+border: 0px; /*MORON TAWNY DONT DELETE THIS */
+border-collapse: separate;
+}
+/* colors of the headers */
+.top, th { /* header for account options, change password, etc*/
+background: var(--gradient2)!important;
+color: var(--light4)!important;
+box-shadow: var(--boxoutshadow)!important;
+border-radius: 10px 10px 0 0;
+position: relative;
+z-index: 2;
+}
+#about > tbody > tr > td > div > a {
+color: var(--light3)!important;
+}
+#about > tbody > tr > td > div > a:hover {
+color: var(--dark3)!important;
+}
+.bottom {
+background: var(--gradient1)!important;
+color: var(--light1)!important;
+box-shadow: var(--boxoutshadow)!important;
+border-radius: 0 0 10px 10px;
+}
+.table .bottom select {
+color: var(--light1);
+}
+#about > tbody > tr > td > a {
+color: var(--light4)!important;
+}
+#about > tbody > tr > td > a:hover {
+color: var(--dark4)!important;
+}
+table#player a {
+color: var(--light1)!important; /*player table links*/
+}
+table#player a:hover {
+color: var(--dark2)!important; /*player table links*/
+}
+#player > tbody > tr:nth-child(3) > td:nth-child(1) > a {
+color: var(--light4)!important; /*block member*/
+}
+#player > tbody > tr.right > td:nth-child(1) > hr {
+border: var(--border)!important;
+border-radius: var(--borderrad1);
+}
+#player > tbody > tr.right > td > div.xlarge > span, #player > tbody > tr.right > td > p > span {
+font-size: 0px!important;
+}
+#player > tbody > tr.right > td > div.xlarge > span:after, #player > tbody > tr.right > td > p > span:after {
+content: '🌙'; /*replace :|: with moons*/
+font-size: 18px;
+} 
+/* "opt out of reminder emails" */
+.table .left {
+background: var(--gradient1);
+box-shadow: var(--boxoutshadow)!important;
+}
+#accountoptionspanel > table > tbody > tr:nth-child(1) > td > div > div > a {
+  background: none!important;
+}
+/* level stats branch territory color backing SAME AS .TABLE LEFT WHAT*/
+.inner-table .left {
+background: var(--gradient3);
+box-shadow: var(--boxoutshadow);
+border-radius: 20px 0 0 20px;
+}
+/* level stats etc. text color for some fucking reason */
+.inner-table .left b {
+color: var(--light2);
+}
+/* right collumns colors */
+.inner-table .right {
+background: var(--gradient1)!important;
+color: var(--light4);
+box-shadow:  var(--boxoutshadow);
+border-radius: 0px 20px 20px 0px;
+}
+.right_odd { /*right side where sparring happens + block member bar? + bars in cave */
+background: none;
+}
+#pride a:link, #pride a:visited {
+color: var(--light1)!important; /* lioness names*/
+}
+#pride a:hover {
+color: var(--dark1)!important;
+}
+#pride > tbody > tr > td {
+color: var(--light1)!important; /* level number, stats number, age number */
+}
+#pride > tbody > tr > td.left {
+color: var(--light1)!important; /* LV	Stats	Name	Age	Status */
+box-shadow: none!important;
+}
+#pride td.left.b {
+background: var(--gradient3);
+color: var(--light1);
+}
+#pride .right {
+background: var(--gradient3);
+color: var(--dark1);
+box-shadow: none;
+}
+#pride .right_odd {
+background: var(--gradient4);
+box-shadow: none;
+}
+#pride .right_cub {
+background: var(--gradient2);
+color: var(--light4)!important;
+box-shadow: none;
+}
+#pride .right_cub a:link, #pride .right_cub a:visited {
+color: var(--light3)!important;
+}
+#pride .right_cub a:hover {
+color: var(--dark3)!important;
+}
+#pride > tbody > tr > td > i {
+color: var(--light2)!important; /* no unsorted submales */
+}
+#pride > tbody > tr > th > a > div {
+color: var(--light4)!important; /* view cave one */
+}
+#pride > tbody > tr > td > span {
+color: var(--light2)!important; /* footer text */
+}
+#pride > tbody > tr:nth-child(1) > th > select {
+color: var(--light1)!important;
+}
+/*no unsorted submales*/
+td[colspan="5"] {
+color: var(--light1);
+background: none!important;
+box-shadow: none;
+}
+#sparring > tbody > tr:nth-child(2) > td.right_odd {
+background: var(--gradient3);
+box-shadow: var(--boxoutshadow);
+position: relative;
+z-index: 1;
+}
+#sparring > tbody > tr > td > p {
+color: var(--light1);  
+}
+#sparring b {
+color: var(--light3)!important;  
+}
+#attack {
+ color: var(--light1)!important;    
+}
+#attack a {
+ color: var(--light3)!important;   
+}
+#attack a:hover {
+ color: var(--dark3)!important;   
+}
+#attack b {
+ color: var(--light3)!important;   
+}
+#attack .bottom a {
+color: var(--light4)!important;
+}
+#attack .bottom a:hover {
+color: var(--dark4)!important;
+}
+#allies {
+color: var(--light2)!important;
+}
+#allies b {
+color: var(--light1)!important;
+}
+#allies a {
+color: var(--light3)!important;
+}
+#allies a:hover {
+color: var(--dark3)!important; 
+}
+#allies > tbody > tr:nth-child(3) > td, #allies > tbody > tr:nth-child(5) > td, #clans > tbody > tr:nth-child(3) > td { /*clans and allies table, divider bars*/
+background: var(--light4)!important;
+}
+#allies .bottom a {
+color: var(--light4)!important;
+}
+#allies .bottom a:hover {
+color: var(--dark4)!important;
+}
+#clans a {
+color: var(--light3)!important; 
+}
+#clans a:hover {
+color: var(--dark3)!important; 
+}
+/* left hand side of where territory desc is */
+td.left.b {
+background: var(--gradient3);
+color: var(--light1);
+}
+#editdetailspanel > table > tbody > tr > td.right > input, #changepasswordpanel > table > tbody > tr > td.right > input {
+background: var(--light1)!important;
+box-shadow: var(--dark1) 0px -40px 20px -28px inset, var(--boxoutshadow)!important;
+color: var(--light3) !important;
+border-radius: var(--borderrad2)!important;
+text-shadow: var(--textshadow)!important;
+transition: var(--transition1);
+border: none!important;
+}
+#editdetailspanel > table > tbody > tr > td.right > input:hover, #changepasswordpanel > table > tbody > tr > td.right > input:hover {
+background: var(--light2)!important;
+box-shadow:var(--dark2) 0px -40px 20px -28px inset, var(--boxoutshadow)!important; 
+color: var(--light4)!important;
+transition: var(--transition2);
+} 
+#editdetailspanel select {
+background: var(--gradient1);
+color: var(--light3);
+}
+#editdetailspanel > table > tbody > tr > td.right > a {
+color: var(--light3)!important;
+}
+#editdetailspanel > table > tbody > tr > td.right > a:hover {
+color: var(--dark3)!important;
+}
+.col-xs-6 a {
+color: var(--light3)!important;
+} /*opt out of reminder text*/
+.col-xs-6 a:hover {
+color: var(--dark3))!important;
+}
+/*territory desc profile content here area*/
+textarea {
+background: var(--gradient270);
+color: var(--light3);
+box-shadow: var(--boxoutshadow);
+border-radius: var(--borderrad2);
+text-shadow: var(--textshadow);
+font-size: 1.5em;
+border: 0px !important; /*dont even think about it buster*/
+}
+/*color of dropdown menu*/
+select {
+background: var(--gradient4);
+color: var(--light1);
+box-shadow:  var(--boxoutshadow);
+text-shadow: var(--textshadow);  
+border-radius: var(--borderrad2);
+border: 0px!important;
+}
+.bottom input {
+background: var(--light4)!important;
+box-shadow: var(--dark4) 0px -40px 20px -28px inset, var(--boxoutshadow)!important;
+color: var(--light3)!important;
+}
+/* the switchies at the bottom*/
+.item-header {
+background: var(--gradient2);
+color: var(--light4);
+box-shadow: var(--boxoutshadow);
+border-radius: var(--borderrad2) 10px 0 0;
+}
+.item {
+background: var(--gradient3);
+box-shadow: var(--boxoutshadow);
+border-radius: var(--borderrad2);
+border: none;
+}
+/*account option buttons*/
+div.slider.round {
+background: var(--gradient1);
+box-shadow: var(--boxoutshadow);
+}
+input:checked+.slider {
+background: var(--gradient2)!important;
+}
+div.slider.round::before {
+background: var(--gradient4) ;
+box-shadow: var(--boxoutshadow);
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+transform: scale(1.2);
+}
+/*text above fapa */
+b {
+color: var(--light3);
+}
+/*fapa */
+div.feature {
+background: var(--gradient4);
+color: var(--light1);
+border-radius: var(--borderrad2);
+filter: var(--dropshadow);
+border: none;
+}
+div.feature h3 {
+color: var(--light2)!important; 
+}
+span.xsmall {
+ font-size: 14px;
+}
+#pageContainer > center > div:nth-child(32) > div > a > div {
+color: var(--light1);  
+}
+/* achievement, king dyansty, pride dynasty, showcase panels */
+div.left {
+background: var(--gradient4);
+filter: var(--dropshadow);
+border-radius: var(--borderrad2);
+overflow: hidden;
+}/* c */
+div.left a {
+background: var(--gradient1);
+color: var(--light2)!important;  
+}
+div.cave-grid>img[src$="unsortedlionsbanner.png"] {
+content: var(--unsorted);
+}
+div.cave-grid>img[src$="nestingbanner.png"] {
+content: var(--nesting);
+}
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
+content: var(--poverview);
+}
+a[href$="303690"]>div.cave-grid>img {
+content: var(--cave1);
+}
+a[href$="340504"]>div.cave-grid>img {
+content:var(--cave2);
+}
+a[href$="195655"]>div.cave-grid>img {
+content:var(--cave3);
+}
+a[href$="197649"]>div.cave-grid>img {
+content: var(--cave1);
+}
+a[href$="347137"]>div.cave-grid>img {
+content:var(--cave2);
+}
+a[href$="303764"]>div.cave-grid>img {
+content:var(--cave3);
+}
+a[href$="359308"]>div.cave-grid>img {
+content: var(--cave1);
+}
+a[href$="347325"]>div.cave-grid>img {
+content:var(--cave2);
+}
+a[href$="431257"]>div.cave-grid>img {
+content:var(--cave3);
+}
+a[href$="530807"]>div.cave-grid>img {
+content: var(--cave4);
+}
+a[href$="530806"]>div.cave-grid>img {
+content:var(--cave5);
+}
+a[href$="530809"]>div.cave-grid>img {
+content:var(--cave6);
+}
+div.mound-grid>img[src$="addbeetlemound.png"] {
+content: var(--moundunsort);
+}
+div.mound-grid>img[src$="beetleunsorted.png"] {
+background: var(--moundunsort);
+}
+/* look into the unsorted mound image*/
+a[href$="98637"]>.mound-grid img {
+background: var(--mound1)!important;
+}
+/* all caves image start remove here*/
+div.cave-grid>img {
+content: var(--ncave);
+opacity: var(--opacity2);
+transition: var(--transition1);
+border-radius: var(--borderrad2)!important;
+cursor: var(--cursorHover)!important;
+position: absolute;
+overflow: hidden;
+z-index:25;
+height: 200px;
+width: 250px;
+margin-top: 25px;
+border: 0px;
+padding-left: 0%;/* o */
+}
+.cave-grid {
+  background: var(--light4);
+background-image: var(--backscroll);
+box-shadow: var(--boxoutshadow);
+color: var(--light2)!important;
+transition: var(--transition2);
+cursor: var(--cursorHover)!important;
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 12px!important;
+border: 0px;
+max-height:250px;
+max-width:250px;
+height: 200px;
+width:250px;
+line-height: 20px;
+padding-bottom: 20px;
+z-index: 20;
+}
+/* da mounds */
+.mound-grid {
+ background: var(--light4);
+background-image: var(--backscroll);
+box-shadow: var(--boxoutshadow);
+color: var(--light2)!important;
+transition: var(--transition2);
+cursor: var(--cursorHover)!important;
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+border: none;
+border-radius: 50px!important;
+max-height: 225px;
+max-width: 200px;
+height: 200px;
+width: 200px;
+line-height: 10px;
+z-index: 20;
+}
+div.mound-grid img {
+content: var(--nmound);
+opacity: var(--opacity2);
+transition: var(--transition2);
+cursor: var(--cursorHover)!important;
+background-size: cover;
+position: absolute;
+padding-left: 0%;
+height: 200px;
+width: 200px;
+margin-top: 10px;
+border-radius: 50px;
+z-index: 25;
+}/* l */
+.cave-grid:hover > img, .mound-grid:hover > img {
+transition: var(--transition2)!important;
+opacity: 0!important;
+z-index: -1;
+}
+.cave-grid:hover, .mound-grid:hover {
+transition: var(--transition2)!important;
+font-size: 30px!important;
+line-height: 24px;
+}
+/* normal caves image
+div.cave-grid>img {
+content: var(--ncave)!important;
+opacity: var(--opacity1);
+border-radius: var(--borderrad1);
+filter: var(--dropshadow);
+transition: var(--transition1);
+overflow: hidden;
+padding-left: 0%;
+border: 0px;
+height: 150px;	
+width: 260px;
+}
+.mound-grid img {
+background:var(--nmound);
+opacity: var(--opacity1);
+border-radius: var(--borderrad1);
+filter: var(--dropshadow);
+transition: var(--transition1);
+background-size:cover;
+width: 100%;
+height: 100%;
+padding-top: 70%;
+padding-right: 100%;
+max-height:150px;
+}
+div.cave-grid>img:hover, .mound-grid img:hover {
+opacity: var(--opacity2);
+transition: var(--transition2);
+}
+.cave-grid,
+.mound-grid {
+background: var(--gradient3);
+color: var(--light2);
+border-radius: var(--borderrad2);
+filter: var(--dropshadow);
+transition: var(--transition1);
+overflow: hidden;
+max-height: 180px;
+max-width: 290px;
+border: 0px;
+}
+.cave-grid:hover,
+.mound-grid:hover {
+color: var(--light1);
+transition: var(--transition2);
+}*/
+/* featured lioness image code by hok-z #41458 */
+.lionImage img:first-child {
+visibility: hidden;
+}
+.lionImage {
+background: var(--feetLion) no-repeat;
+filter: var(--dropshadow);
+border-radius: 20px;
+z-index: -1;
+}
+.col-md-3.col-xs-4.center {
+display: inline-block;
+float: none;
+}
+.tawnLRContain {
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+width: 90%;
+}
+.tawnLRContain h3 {
+color: var(--light2)!important;
+font-size: 35px!important;
+}
+.tawnLBox {
+ width: 47%;
+}
+.tawnMBox {
+ width: 32%;
+}
+.tawnLBox, .tawnMBox, .tawnBBox {
+background: var(--gradient370);
+color: var(--light1);
+box-shadow: var(--boxoutshadow);
+border-radius: var(--borderrad2);
+height: 350px;
+padding: 10px;
+text-align: center;
+overflow-x: hidden;
+float: left;
+}
+.tawnBBox {
+transition: var(--transition1);
+height: 70px;
+width: 60%;
+padding-top: 0px;
+overflow: hidden;
+}
+.tawnBBox:hover {
+transition: var(--transition2);
+height: 500px;
+width: 100%;
+}
+.tableCollar {
+background: var(--tawnyboxIMG) top center no-repeat!important;
+box-shadow: var(--boxoutshadow);
+color: var(--light2);
+border-radius: var(--borderrad2);
+filter: var(--dropshadow);
+background-size: cover!important;
+width: 580px;
+}
+.tawnbox, .tawnbox2 {
+background: var(--gradient370);
+color: var(--light2);
+box-shadow: var(--boxoutshadow);
+border-radius: var(--borderrad1);
+font-size:16px;
+text-align: center;
+overflow-x: hidden;
+padding: 5px;
+}
+.tawnbox {
+margin-top: 5%;
+width: 250px;
+height: 380px;
+}
+.tawnbox2 {
+width: 200px;
+height: 200px;
+margin-top: 10px;
+margin-left: 70px;
+}
+.tawnbox h3, .tawnbox2 h3, .tawnbox h2, .tawnbox2 h2 {
+color: var(--light1)!important;
+margin-top: 10px;
+border-bottom: 2px dashed var(--dark1);
+text-align: left;
+}
+.tawnlinks {
+background: linear-gradient(90deg, var(--light1) 0%, var(--dark1) 100%);
+color: var(--light3);
+border-right: 5px dashed var(--dark2)!important;
+font-size: 11px;
+font-weight: normal;
+letter-spacing: 1px;
+text-align: left;
+border-radius:5px 0 0 5px;
+width:70px;
+height: 436px;
+display: flex;
+flex-direction: column;
+position: absolute;
+}
+.tawnlinks a {
+color: var(--dark4) !important;
+}
+.tawnlinks a:link {
+color: var(--light2);
+transition: var(--transition2);
+}
+.tawnlinks a:visited {
+color: var(--light2);
+transition: var(--transition1);
+}
+.tawntextoverlay {
+transition: var(--transition1);
+filter: var(--dropshadow);
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin-left: -18%;
+height: 100%;
+width: 100%;
+opacity: 1;
+z-index:100;
+}
+.tawntext {
+color: var(--light2);
+text-shadow: var(--textoutline);
+transition: var(--transition1);
+filter: var(--shadow);
+position: absolute;
+text-align: left;
+font-size: 20px;
+left: 130%;
+margin-top: -40px;
+opacity: 0;
+width: 200px;
+pointer-events: none;
+}
+.tawntextoverlay:hover {
+color: var(--dark2) !important;
+transition: var(--transition1);
+rotate: 5deg;
+}
+.tawnlinks a {
+flex-grow: 1;
+}
+.tawntextoverlay:hover * {
+opacity: var(--opacity2);
+transition: var(--transition2);
+}
+.tawnpicture {
+background: var(--highlight);
+outline: var(--outline);
+transition: var(--transition2);
+filter: var(--dropshadow);
+position: relative;
+left: 230px;
+bottom: 540px;
+width: 120px;
+height: 120px;
+margin-bottom:-100px; /*doing this prevents the large space under the tawnbox*/
+}
+.tawnpicture:hover {
+transition: var(--transition1);
+rotate: -5deg;
+transform: scale(1.2);
+}
+.tawnmoon {
+color: var(--shadow);
+transition: var(--transition2);
+filter: var(--dropshadow);
+position: absolute;
+text-align: center;
+left: 94%;
+margin-top:-37px;
+font-size: 30px;
+}
+.tawnmoon:hover {
+rotate: 5deg;
+transition: var(--transition1);
+}
+.tawnmoon a::before {
+color: var(--light4);
+position: absolute;
+margin-top: 40px;
+margin-left: -80px;
+content: 'CSS By tawnyCollar#251887';
+font-size: 0px;
+width: 200px;
+transition: var(--transition2);
+}
+.tawnmoon a::before:not(:hover) { 
+font-size: 0px!important;
+}
+.tawnmoon a:hover::before {
+font-size: 14px;
+transition: var(--transition1);
+}
+@media screen and (max-width: 767px){
+.tawnmoon {
+left: 90%;
+margin-top: -30px;
+font-size: 25px;
+}
+}
+div#lion_image {
+content: var(--kingportraitDesktop);
+border-radius: var(--borderrad2);
+filter: var(--dropshadow);
+opacity: var(--opacity1);
+transition: var(--transition2);
+position: relative;
+flex-grow: 1;
+}
+div#lion_image:hover {
+opacity: var(--opacity2)!important; 
+}
+/*code by Pandora #144118 */
+/*frame code by hok-z #170947*/
+#about > tbody > tr.right > td:nth-child(1)::after {
+content: var(--frameIMG)!important;
+position:absolute;
+transform: scale(3.0,2.3); /* frameIMG scale */
+left: 320px;
+top: 155px;
+}
+#about > tbody > tr.right {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#about > tbody > tr.right > td:nth-child(1) {
+width: 650px!important;
+}
+#about > tbody > tr.right > td.right > table > tbody {
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+}
+#about > tbody > tr.right > td.right > table > tbody > tr > td.left, #about > tbody > tr.right > td.right > table > tbody > tr > td.right  {
+width: 100px!important;
+height: 65px!important;
+}
+/* beginning of area to remove */
+@media screen and (max-width: 767px) {
+#about > tbody > tr.right > td:nth-child(1) {
+ width: 500px!important;
+}
+}
+table#player img {
+opacity: var(--opacity1);
+border-radius: var(--borderrad2);
+box-shadow: var(--boxoutshadow);
+transition: var(--transition2);
+}
+table#player img:hover {
+opacity: var(--opacity2);
+cursor: var(--cursorHover)!important;
+transition: var(--transition1);
+}
+/*code by Pandora #144118 */
+#player > tbody > tr.right > td:nth-child(2)::after {
+content: var(--frameIMG);
+transform: scale(0.68);
+position: absolute;
+top: -30px;
+right:-30px;
+}
+#player.table {
+color: var(--light2);
+border-radius: var(--borderrad2);
+position: relative!important;
+overflow: hidden!important;
+}
+/*invisible unless viewing from another account. block member bar*/
+#player td.right_odd {
+background: var(--gradient1)!important;
+color: var(--light3)!important;
+border-radius: 0px;
+box-shadow: none;
+}
+optgroup {
+ background: var(--light1)!important;
+}
+/*bookmark button and switch account button. input = all buttons*/
+input.floatright, button.button, input {
+cursor: var(--cursorHover)!important;
+background: var(--light4)!important;
+box-shadow: var(--dark4) 0px -40px 20px -28px inset, var(--boxoutshadow)!important;
+color: var(--light2)!important;
+border-radius: var(--borderrad2)!important;
+text-shadow: var(--textshadow)!important;
+transition: var(--transition1);
+border: none !important;
+}
+/*yes, all these !important are needed, input doesn't like cooperating */
+input.floatright:hover, button.button:hover, input:hover{
+background: var(--light2)!important;
+box-shadow:var(--dark2) 0px -40px 20px -28px inset, var(--boxoutshadow)!important; 
+color: var(--light4)!important;
+transition: var(--transition2);
+}
+/*pandora #144118 made this code, no touchy */
+div.navbar-header::before {
+color: var(--light4)!important;
+display: block;
+text-align: center;
+position: absolute;
+pointer-events: none;
+font-size: 15px!important;
+padding-top: 4.7%;
+padding-left: 55%;
+z-index: 100;
+}
+.brick::before {
+color: var(--light4)!important;
+transition: var(--transition1);
+content: 'CSS By tawnyCollar#251887';
+display: block;
+text-align: center;
+position: absolute;
+pointer-events: none;
+font-size: 15px!important;
+z-index: 100;
+}
+.brick:hover::before {
+color: var(--dark4)!important;
+transition: var(--transition2);
+}
+.brick {
+background: none; /* change this to find your box */
+display: block;
+position: absolute;
+width: 260px;
+height: 30px;
+z-index: 101;
+left: 660px;
+top: 3px;
+}
+.brick a:link, .brick a:visited {
+opacity: 0!important;
+}
+@media screen and (max-width: 767px) {
+/*pandora #144118 made this code, no touchy MOBILE*/
+div.navbar-header::before {
+color: var(--light3)!important;
+content: 'CSS By tawnyCollar#251887';
+display: block;
+text-align: center;
+position: absolute;
+pointer-events: none;
+font-size: 18px;
+padding-top: 2.5%;
+padding-left: 30%;
+z-index: 100;
+}
+.brick {
+display: none;
+}
+}
+/* scroll bar */
+::-webkit-scrollbar {
+width: 9px;
+height: 9px;
+}
+/* background of scroll bar */
+::-webkit-scrollbar-track {
+background: var(--gradient4);
+box-shadow: var(--dark4) 0px -67px 93px -35px inset, var(--boxoutshadow)!important;
+filter: var(--dropshadow);
+border-radius: var(--borderrad2);
+}
+/*thumb of scroll bar */
+::-webkit-scrollbar-thumb {
+background: var(--gradient1);
+box-shadow: var(--boxoutshadow)!important;
+filter: var(--dropshadow);
+border-radius: var(--borderrad2);
+}
+h1 {/* r */
+font-size: 70px;
+text-align: center;
+color: var(--light3);
+}
+h2 {
+color: var(--light1);
+font-size: 30px;
+text-align: center;
+}
+h3 {
+color: var(--light3)!important;
+font-size: 28px !important;
+ text-align: center;
+transition: var(--transition2);
+}
+a:link h3, a:visited h3 {
+cursor: var(--cursorHover)!important;
+color: var(--light3)!important;
+}
+a:hover h3 {
+color: var(--dark3)!important;
+}
+#pageContainer > center > div.row.dynastycollection > div > a > div > h3 {
+color: var(--light1) !important;  
+}
+/*logo replacer*/
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+content: var(--logo);
+cursor: var(--cursorHover)!important;
+filter: var(--dropshadow);
+width: 130px;
+margin-top: -10px;
+margin-left: -1px;
+}
+/* beetle book adjustment code by tawnyCollar#251887. may be used in commissions, personal CSS, and free CSS. do NOT remove credit, or reupload claiming it as your own. */
+/* change beetle book image */
+img[src$="den_ancestors.png"], img[src$="den_ancestorsfem.png"], img[src$="den_achievements.png"], img[src$="den_showcase.png"], img[src$="den_beetlebook.png"] {
+background:none!important; 
+border-radius: var(--borderrad2);
+filter:var(--dropshadow);
+}
+img[src$="den_ancestors.png"] {
+content:var(--kdynasty);
+}
+img[src$="den_ancestorsfem.png"] {
+content:var(--pdynasty);
+}
+img[src$="den_achievements.png"] {
+content: var(--achievements);
+}
+img[src$="den_showcase.png"] {
+content: var(--showcase);
+}
+img[src$="den_beetlebook.png"] {
+content: var(--bbook);
+}
+body &gt; div.container.main &gt; div &gt; div.col-md-9.col-xs-12 &gt; center {
+flex-wrap: nowrap;
+justify-content: space-between;
+}
+.dynastylist {
+flex: 1 1 auto;
+max-width: 20%;
+box-sizing: border-box;
+}
+.dynastylist img {
+width: 100%!important;
+}
+.dynastylist h3 {
+font-size:23px !important;
+white-space:nowrap;
+}
+/* Codes made by Pandora #144118. Codes may be edited, used in commissions or for personal use. Please do not remove credit*/
+.member-online {
+content: var(--online);
+filter: var(--dropshadow);
+width: 60px;
+height: 60px;
+margin-left: -70px;
+margin-top: -20px;
+border-radius: 0px;
+z-index: 999;
+position: absolute;
+background: rgba(0,0,0,0);
+}
+.member-offline {
+content: var(--online); 
+filter: drop-shadow(0px 0px 1mm #000000) saturate(0);
+width: 60px;
+height: 60px;
+margin-left: -70px;
+margin-top: -20px;
+border-radius: 0px;
+z-index: 999;
+position: absolute;
+background: rgba(0,0,0,0);
+}
+img[src$="day.png"] { /* day */
+content: var(--day);
+filter: var(--dropshadow);
+width:50px!important;
+margin-left:-40px;
+}
+img[src$="night.png"] { /* night */
+content: var(--night);
+filter: var(--dropshadow);
+width:50px!important;
+margin-left:-40px;
+}
+img[src$="icon-season-dry.png"] { /* dry */
+content: var(--dry);
+filter: var(--dropshadow);
+width: 50px!important;
+}
+img[src$="icon-season-wet.png"] { /* wet */
+content: var(--wet);
+filter: var(--dropshadow);
+width: 50px!important;
+}
+img[src$="icon-beetle-gold.png"] { /*gb n sb*/
+content: var(--GB);
+filter: var(--dropshadow);
+width: 30px!important;
+}
+img[src$="icon-beetle-silver.png"] {
+content: var(--SB);
+filter: var(--dropshadow);
+width: 30px!important;
+}
+img[src$="dermestid.png"], img[src$="HeartShell.png"], img[src$="beetlerhino.png"], img[src$="easteregg.png"], img[src$="beetlemant.png"], img[src$="khepri.png"], img[src$="axion.png"], img[src$="beetlecarrion.png"], img[src$="beetlejewel.png"], img[src$="beetleblood.png"], /* 251887 */img[src$="scarabbeetle.png"], img[src$="stinkbug.png"] {
+content: var(--event1); /* evemt currency */
+filter: var(--dropshadow);
+width: 50px;
+}
+img[src$="icon_doubloon.png"], img[src$="meteoriteshard.png"], img[src$="icon_bone.png"], img[src$="icon_eldritch.png"] {
+content: var(--event2);
+filter: var(--dropshadow);
+width: 50px;
+}
+
+.emoteInput {
+visibility: hidden;
+display: block;
+margin-top: -10px!important;
+margin-left: -40px!important;
+transform: scale(.25);
+}
+.emoteInput::after {
+cursor: var(--cursorHover)!important;
+content: var(--emote);
+filter: var(--dropshadow);
+visibility: visible;
+}
+#pageSidebar > div.col-md-12.col-xs-12 > div:nth-child(4) > div > div {
+text-align: center;
+}
+img[src$="//static.lioden.com/images/iconFB.png"] {
+content: var(--facebook);
+filter: var(--dropshadow);
+cursor: var(--cursorHover)!important;
+width: 60px!important;
+}
+img[src$="//static.lioden.com/images/iconTwit.png"] {
+content: var(--twitter);
+filter: var(--dropshadow);
+cursor: var(--cursorHover)!important;
+width: 50px!important;
+}
+img[src$="//static.lioden.com/images/iconTwitch.png"] {
+content: var(--twitch);
+filter: var(--dropshadow);
+cursor: var(--cursorHover)!important;
+width: 60px!important;
+}
+img[src$="//static.lioden.com/images/iconYoutube.png"] {
+content: var(--youtube);
+filter: var(--dropshadow);
+cursor: var(--cursorHover)!important;
+width: 50px!important;
+}
+/* SIDEBAR ARROWS */
+/* TOP */
+div.col-xs-6 > a > h3 > div {
+content: var(--arrow1);
+filter: var(--dropshadow);
+position: absolute;
+pointer-events: none;
+margin-top: -45px;
+width: 70px;
+right: -10px;
+z-index: 1;
+}
+/* MIDDLE */
+div.col-xs-5> a:nth-child(1) > h3 > div {
+content: var(--arrow2);
+filter: var(--dropshadow);
+position: absolute;
+pointer-events: none;
+width: 70px;
+right: -10px;
+top: -10px;
+z-index: 1;
+}
+/* BOTTOM */
+div.col-xs-5> a:nth-child(3) > h3 > div {
+content: var(--arrow3);
+filter: var(--dropshadow);
+position: absolute;
+pointer-events: none;
+width: 70px;
+right: -10px;
+top: 95px;
+z-index: 1;
+}
+.scroll-container {
+color: var(--light1);
+font-size: 20px!important;
+font-weight: bold;
+overflow: hidden;
+padding: none;
+width: 570px;
+position: relative;
+top: -485px;
+z-index: auto;	
+-webkit-animation: color-change-2x 2s linear infinite alternate both;
+animation: color-change-2x 2s linear infinite alternate both;
+}
+.scroll-text {
+-moz-transform: translateX(100%);
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+-moz-animation: scroll-animation 12s linear infinite;
+-webkit-animation: scroll-animation 12s linear infinite;
+animation: scroll-animation 12s linear infinite;
+}
+@keyframes scroll-animation {
+0% {
+-moz-transform: translateX(100%);
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+100% {
+-moz-transform: translateX(-100%);
+-webkit-transform: translateX(-100%);
+transform: translateX(-100%);
+}
+}
+@keyframes color-change-2x {
+0% {
+color: var(--light4);
+}
+100% {
+color: var(--light3);
+}
+}
+img[src$="hand_text.svg"] {
+content: url("https://raw.githubusercontent.com/ghostsofsteel/shadsperiment/refs/heads/main/87104278_dsbKq9wo5Ilnxmy%20(2).gif")!important;
+width: 30px!important;
+box-shadow:none!important;
+filter: var(--dropshadow);
+}
+#fraOrganizationBlock > div:nth-child(3) > a > div > img {
+color: var(--light4)!important; 
+}
+/* CUSTOM KING TITLE - BEFORE */
+ 
+#about > tbody > tr:nth-child(1) > td > div::after {
+    content:'(Image updated by me)';
+    font-size:17px
+}
+/* Codes made by Pandora #144118  
+Codes may be edited, used in commissions or for personal use
+Please do not remove credit
+*/
+/* CUSTOM KING TITLE - BEFORE */
+ 
+#about > tbody > tr:nth-child(1) > td > div::before {
+    content:'Firelight';
+    font-size:17px
+    color: #39D5DB
+}
